@@ -1,0 +1,8 @@
+issue_id,category,severity,layer,status,example
+ISS-001,response_latency,high,L3,open,Slow answer on multi-vehicle allocation query
+ISS-002,edge_case_handling,high,L2,open,Conflicting constraints not flagged
+ISS-003,governance,medium,L1,open,Missing audit trail for recommendation
+ISS-004,usability,medium,L3,closed,Unclear next-step wording
+ISS-005,knowledge_transfer,medium,L1,open,Domain rule lived only in one expert
+ISS-006,hallucinated_constraint,high,L2,open,Invented compatibility rule
+# Replace with the full anonymised 42-issue log

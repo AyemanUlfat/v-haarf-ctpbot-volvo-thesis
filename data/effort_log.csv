@@ -1,0 +1,5 @@
+phase,hours,notes
+validation,180,scenario-based testing and issue logging
+refinement,140,prompt, context, and workflow fixes
+analysis_and_framework,75,Template Analysis, scoring, documentation
+total,395,published thesis total
