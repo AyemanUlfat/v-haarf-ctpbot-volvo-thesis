@@ -1,50 +1,58 @@
-# Evaluation of Tailor-Made Generative AI Solutions for Efficient Test Vehicle Allocation at Volvo Cars
+# 🚗 Evaluation of Tailor-Made Generative AI Solutions for Efficient Test Vehicle Allocation at Volvo Cars
 
-Master’s thesis (30 hp), University West, June 2026  
-**Ayeman Ulfat** — Advisor: Fredrik Ahrenberg, Volvo Cars — Examiner: Morgan Nilsen
+> A case study on feasibility, effort, and implementation practices for agentic AI in industrial test planning — developed at University West in collaboration with Volvo Cars.
 
-Case study of **CTPBot**, an agentic AI assistant for the Compatible Test Plan (test vehicle allocation) workflow.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![Framework](https://img.shields.io/badge/Framework-V--HAARF-0A66C2)
+![Case study](https://img.shields.io/badge/Case%20study-CTPBot-orange)
+![Evaluation](https://img.shields.io/badge/Effectiveness-73%2F100-green)
+![Status](https://img.shields.io/badge/Thesis-Completed-success)
 
-## What this repository contains
+---
 
-1. **V-HAARF** — Volvo Hybrid AI Adoption & Readiness Framework (strategic / process / task).
-2. **Post-implementation evaluation** — three-layer score that produced **73/100** for CTPBot.
-3. Templates and scripts for issue logging (~42 issues), effort tracking (~395 h), and scoring.
+## 📌 Overview
 
-Volvo operational data is **not** included.
+This thesis tackles a real industrial decision problem: **when should Volvo Cars use agentic generative AI** for test vehicle allocation — and when are simpler automation or human-led processes the better choice?
 
-## Layout
+The work was carried out with Volvo Cars’ **Product Test and Certification** department. It evaluates **CTPBot**, an agentic AI tool built to support the Compatible Test Plan (CTP) workflow, and delivers reusable frameworks so future AI projects can be assessed in a consistent way.
+
+The project covers the full adoption lifecycle: **feasibility and business value**, **effort to reach domain-specific performance**, and **implementation practices** after a system is already in use.
+
+---
+
+## 🎯 Project goals
+
+- Decide where agentic AI adds value, where RPA/rules are enough, and where humans should stay in control
+- Estimate the real time and effort needed to reach acceptable domain performance
+- Capture methods and best practices for later AI projects at Volvo Cars
+
+---
+
+## 🧩 Frameworks
+
+### V-HAARF
+**Volvo Hybrid AI Adoption & Readiness Framework** — a three-layer decision tool:
+
+1. **Strategic evolution** — is this the right kind of problem for AI at company level?
+2. **Process readiness** — is the workflow, data, and organisation ready?
+3. **Task suitability** — which tasks should be agentic, automated, or human-led?
+
+### Post-implementation evaluation
+A separate three-layer framework for systems already in use. It combines quantitative metrics and qualitative analysis (including Template Analysis) into one **AI System Effectiveness Score (0–100)**.
+
+---
+
+## 📁 Repository structure
 
 ```text
-config/       scoring weights and published CTPBot layer scores
-data/         anonymised / template CSV results
-src/          scoring and evaluation scripts
-notebooks/    walkthrough of the 73/100 score
-docs/         thesis PDF and one-page description
-templates/    empty checklists for the next Volvo process
-requirements.txt
-```
-
-## Quick start
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/run_evaluation.py
-```
-
-Then open `notebooks/ctpbot_effectiveness_score.ipynb`.
-
-## Published CTPBot result
-
-| Layer | Name | Score (1–5) | Weight |
-|-------|------|-------------|--------|
-| L1 | Lifecycle and Governance | 4.0 | 30% |
-| L2 | Capability | 3.2 | 40% |
-| L3 | Real-world performance | 3.9 | 30% |
-| **Overall** | **AI System Effectiveness Score** | | **73 / 100** |
-
-Band: promising, needs work on latency, governance, edge cases, and knowledge transfer.
-
-
+v-haarf-ctpbot-thesis/
+├── README.md
+├── requirements.txt
+├── config/
+│   └── default.yaml
+├── data/
+│   └── results/
+├── src/
+├── notebooks/
+├── templates/
+└── docs/
