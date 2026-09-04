@@ -1,0 +1,53 @@
+project:
+  title: "Evaluation of Tailor-Made Generative AI Solutions for Efficient Test Vehicle Allocation at Volvo Cars"
+  subtitle: "A Case Study on Feasibility, Effort, and Implementation Practices"
+  author: "Ayeman Ulfat"
+  affiliation: "University West, Department of Engineering Science"
+  programme: "Master Programme in AI and Automation"
+  credits: 30
+  date: "2026-06-05"
+  examiner: "Morgan Nilsen"
+  advisor: "Fredrik Ahrenberg, Volvo Cars"
+  case_study: "CTPBot"
+  department: "Product Test and Certification"
+
+# V-HAARF pre-adoption layers (1-5 scale)
+vhaarf:
+  layers:
+    - id: L1
+      name: Strategic Evolution
+      scale: [1, 5]
+    - id: L2
+      name: Process Readiness
+      scale: [1, 5]
+    - id: L3
+      name: Task Suitability
+      scale: [1, 5]
+  recommendation_bands:
+    human_led: [1.0, 2.4]
+    traditional_automation: [2.5, 3.4]
+    agentic_ai_pilot: [3.5, 5.0]
+
+# Post-implementation evaluation (CTPBot)
+post_implementation:
+  score_min: 0
+  score_max: 100
+  layer_scale: [1, 5]
+  weights:
+    L1_lifecycle_governance: 0.30
+    L2_capability: 0.40
+    L3_real_world_performance: 0.30
+  ctpbot_scores:
+    L1: 4.0
+    L2: 3.2
+    L3: 3.9
+    overall: 73
+  issue_log:
+    n_issues: 42
+  effort:
+    total_hours: 395
+
+paths:
+  issue_log: "data/results/ctpbot_issue_log.csv"
+  effort_log: "data/results/effort_log.csv"
+  scorecard: "data/results/effectiveness_scorecard.csv"
